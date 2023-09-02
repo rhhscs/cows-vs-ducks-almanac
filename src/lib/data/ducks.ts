@@ -1,14 +1,13 @@
-export interface Duck {
-	name: string;
-	imageURL: string;
-	description: string;
-}
+import type Duck from "$lib/models/duck.model";
+
 
 const DUCKS: Duck[] = [
 	{
+		id: 1,
 		name: "Basic Duck",
-		imageURL: "images/ducks/1.png",
-		description: "A basic duck that loves being a duck and hates cows with a passion."
+		imageURL: "/images/ducks/1.png",
+		description: "A basic duck that loves being a duck and hates cows with a passion.",
+		
 	}
 ]
 
