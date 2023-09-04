@@ -13,8 +13,11 @@
 </a>
 
 <style lang="scss">
+	@use '../../styles/exports.scss' as exports;
+
 	a {
 		all: unset;
+		box-shadow: exports.$box-shadow;
 		
 		&:hover {
 			cursor: pointer;

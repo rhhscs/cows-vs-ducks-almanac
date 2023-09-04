@@ -14,6 +14,8 @@
 </div>
 
 <style lang="scss">
+	@use '../../styles/exports.scss' as exports;
+
 	.card {
 		display: flex;
 		flex-direction: column;
@@ -27,6 +29,8 @@
 		background-color: var(--color-light-6);
 
 		height: 100%;
+
+		box-shadow: exports.$box-shadow;
 	}
 
 	.card img {

@@ -29,7 +29,11 @@
 		</div>
 	</div>
 	<div class="almanac__body__detail">
-		<slot name="detail"/>
+		<slot name="detail">
+			<div class="almanac__body__detail__placeholder">
+
+			</div>
+		</slot>
 	</div>
 </section>
 
@@ -38,6 +42,10 @@
 
 	a {
 		all: unset;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 
 	.almanac__body {
@@ -105,4 +113,17 @@
 	.almanac__body__detail {
 		padding: 0.5rem;
 	}
+
+	/* .almanac__body__detail__placeholder {
+
+		box-sizing: border-box;
+
+		border: 0.5rem solid var(--color-light-8);
+		padding: 0.5rem;
+		background-color: var(--color-light-6);
+
+		height: 100%;
+
+		box-shadow: exports.$box-shadow;
+	} */
 </style>
