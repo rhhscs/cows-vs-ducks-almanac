@@ -9,6 +9,9 @@
 
 </script>
 
+<svelte:head>
+	<title>Cows Vs Ducks!</title>
+</svelte:head>
 <main class="almanac">
 	<header class="almanac__header">
 		Almanac
