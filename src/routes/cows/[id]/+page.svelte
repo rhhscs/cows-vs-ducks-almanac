@@ -15,13 +15,17 @@
 			<CowCard {cow} href={`/cows/${index + 1}`}/>
 		{/each}
 	</svelte:fragment>
-	<div slot="detail" in:blur={{ duration: 300, easing: sineInOut }}>
-		<CowDetailCard cow={data.cow}/>
-	</div>
+	<svelte:fragment slot="detail">
+		{#key data.cow.id}
+			<div class="container" in:blur={{ duration: 300, easing: sineInOut }}>
+				<CowDetailCard cow={data.cow}/>
+			</div>
+		{/key}
+	</svelte:fragment>
 </Body>
 
 <style lang="scss">
-	[slot="detail"] {
+	.container {
 		height: 100%;
 	}
 </style>
