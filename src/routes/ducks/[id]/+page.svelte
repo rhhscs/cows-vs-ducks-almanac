@@ -10,11 +10,11 @@
 </script>
 
 <Body>
-  <div slot="display">
+  <svelte:fragment slot="display">
 	  {#each data.ducks as duck, index}
 		  <DuckCard {duck} href={`/ducks/${index + 1}`}/>
 	  {/each}
-  </div>
+  </svelte:fragment>
   <div slot="detail" in:blur={{ duration: 300, easing: sineInOut }}>
 	<DuckDetailCard duck={data.duck}/>
   </div>

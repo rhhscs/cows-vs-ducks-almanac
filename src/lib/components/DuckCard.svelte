@@ -37,15 +37,16 @@
 		background-color: var(--color-light-6);
 	}
 
-  .card img {
-	  width: 100%;
+	.card img {
+		width: 100%;
+		aspect-ratio: 1 / 1;
 
-	  object-fit: cover;
-  }
+		object-fit: contain;
+	}
 
-  .card h3 {
-	  font-weight: bold;
-	  line-height: 0.8;
-	  color: var(--color-dark);
-  }
+	.card h3 {
+		font-weight: bold;
+		line-height: 0.8;
+		color: var(--color-dark);
+	}
 </style>

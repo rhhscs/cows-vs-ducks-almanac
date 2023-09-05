@@ -7,9 +7,9 @@
 </script>
 
 <Body>
-	<div slot="display">
+	<svelte:fragment slot="display">
 		{#each data.ducks as duck, index}
 			<DuckCard {duck} href={`/ducks/${index + 1}`}/>
 		{/each}
-	</div>
+	</svelte:fragment>
 </Body>

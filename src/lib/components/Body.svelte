@@ -25,7 +25,7 @@
 			</a>
 		</div>
 		<div class="almanac__body__menu__items">
-			<slot name="display"/>
+			<slot name="display" />
 		</div>
 	</div>
 	<div class="almanac__body__detail">
